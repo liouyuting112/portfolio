@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="screen-wrapper">
+    <div class="screen-content">
+      
+      <!-- Header Row -->
+      <div class="name-row">
+        <div class="name-label">LIOU YU TING</div>
+        <div class="portfolio-label">Portfolio</div>
+        <div class="menu-row">
+          <div class="menu-item">About Me</div>
+          <div class="divider"></div>
+          <div class="menu-item">Project</div>
+          <div class="divider"></div>
+          <div class="menu-item">Redesign</div>
+          <div class="divider"></div>
+          <div class="menu-item">Contact</div>
+        </div>
+      </div>
+
+      <!-- Intro Text Block -->
+<div class="intro-text-block">
+  <div class="intro-title">
+    <span class="no-break">每一次點擊、滑動和瀏覽，</span><br />
+    都是設計師用心編織的體驗故事。
+  </div>
+  <div class="intro-subtitle"><br /></div>
+  <div class="intro-paragraph">
+    打造簡潔且易用的介面設計，將複雜的問題化繁為簡，<br />
+    運用 HTML、CSS 以及 UI/UX 的專業，讓使用者體驗更加流暢與愉悅。<br /><br />
+    歡迎來到我的作品集，期待與你分享我的設計旅程與作品！
+  </div>
+</div>
+
+      <div class="image-row">
+      <img src="images/01.png" alt="圖01">
+      <img src="images/02.png" alt="圖02">
+      <img src="images/03.png" alt="圖03">
+    </div>
+    <!-- About Me Section -->
+<div class="about-section">
+  <div class="about-container">
+    <div class="about-left">
+      <img class="about-avatar" src="images/me.jpg" alt="個人照片" />
+      <div class="about-info">
+        <div>Name: Liou Yu Ting</div>
+        <div>Date of Birth: March 12, 2000</div>
+        <div>Location: Zhongli District, Taoyuan City</div>
+        <div>Education: Multimedia Design, NTUST</div>
+      </div>
+    </div>
+
+    <div class="about-divider"></div>
+
+    <div class="about-skill">
+      <div class="skill-text">Skill: UI Design, <br />HTML/CSS/JS</div>
+      <div class="skill-icons">
+        <img class="icon" src="images/ps.png" alt="Photoshop" />
+        <div class="icon-nested">
+          <img class="icon-nested-img" src="images/figma.png" alt="Figma" />
+        </div>
+        <img class="icon" src="images/ae.png" alt="After Effects" />
+        <img class="icon" src="images/pr.png" alt="Premiere" />
+        <img class="icon" src="images/maya.png" alt="Maya" />
+        <img class="icon" src="images/ai.png" alt="Illustrator" />
+      </div>
+      </div>
+       </div>
+<!-- About Me Section 結束後，加入三欄滑動卡片 -->
+<div class="swiper-container-wrapper" style="margin-top: 20px;">
+  <div class="swiper info-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide info-card info-goals">
+        <div class="info-title">Future Goals</div>
+        <div class="info-content">
+          <p>我希望持續精進 UI/UX 設計能力，打造簡潔直覺、具美感且易用的產品介面。期望能結合過去在視覺設計、互動設計與 3D/AR 技術上的經驗，開發富有創意又貼近用戶需求的作品。未來希望投入數位產品設計領域，成為一位懂設計、會溝通、能解決問題的 UI/UX 設計師，將想法轉化為真正有價值的使用體驗。</p>
+        </div>
+      </div>
+      <div class="swiper-slide info-card info-aboutme">
+        <div class="info-title">About Me</div>
+        <div class="info-content">  
+          <p>Hi，我是劉宇庭，來自桃園市，對介面排版及數位互動有著高度熱忱。大學時期，從 2D 平面、3D 建模到互動網頁與擴增實境，我接觸跨媒材學習與創作。專題與實務經驗讓我學會團隊合作與溝通協調，也養成了從使用者角度思考的設計習慣。畢業後，我對 UI/UX 設計產生濃厚興趣，開始自主學習與實作，從發想到介面規劃，一步步實現想法。</p>
+        </div>
+      </div>
+      <div class="swiper-slide info-card info-education">
+        <div class="info-title">Education Background</div>
+        <div class="info-content">
+          <p>我畢業於臺中科技大學多媒體設計系，主修設計組，累積了多元的設計技能。在學期間學習了如何使用Maya3D 建模、網頁互動設計與 AR 擴增實境應用，也參與了人機介面設計課程，探索 AI 技術與使用者體驗的結合。曾協助學校製作招生簡章，並於畢業專題中以海洋議題製作 2D 平面動畫，參與台北與高雄的展覽，累積實務經驗與作品發表能力。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="full-width-container"></div>
+  <div class="projects-wrapper">
+  <div class="projects-text">Projects</div>
+  <div class="projects-image-wrapper">
+  <img src="images/project00.png" alt="project00" class="project-image" />
+  
+  <div class="project-layer left" id="l1"><img src="images/project-l1.png" /></div>
+  <div class="project-layer left" id="l2"><img src="images/project-l2.png" /></div>
+  <div class="project-layer left" id="l3"><img src="images/project-l3.png" /></div>
+
+  <div class="project-layer right" id="r1"><img src="images/project-r1.png" /></div>
+  <div class="project-layer right" id="r2"><img src="images/project-r2.png" /></div>
+  <div class="project-layer right" id="r3"><img src="images/project-r3.png" /></div>
+</div>
+  <div class="projects-text01">Design Concept</div>
+  <img src="images/project00.png" alt="project00" class="project-image01" />
+</div>
+</div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

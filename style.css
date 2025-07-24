@@ -1,0 +1,503 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  /* align-items: flex-start; */ /* 改成靠上對齊 */
+  align-items: flex-start;
+  height: 100vh;
+  overflow-y: auto; /* 當內容高於視窗可滾動 */
+  overflow-x: hidden; /* 隱藏橫向滾動條 */
+  
+}
+
+/* 包住 1440x900 畫布的容器 */
+.screen-wrapper {
+  height: auto; /* 最小高度填滿整個視窗高度 */
+  max-width: none;  /* 取消最大寬度限制 */
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  position: relative;
+  box-shadow: none; /* 也可取消陰影避免邊界看起來像限制 */
+  overflow: visible;
+  padding: 20px 57px 0 57px; /* 頂部與左右內距 */
+  box-sizing: border-box;
+  
+}
+body, html {
+    margin: 0; padding: 0; height: 200vh; /* 讓頁面可滾動 */
+  }
+
+/* 放置內容 */
+.screen-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* 絕對定位的名字文字 */
+.name-row {
+  display: flex;
+  align-items: baseline;
+  gap: 60px;
+  flex-wrap: wrap; /* 小螢幕自動換行 */
+  position: relative;
+}
+
+.name-label,
+.portfolio-label {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1f2937;
+  font-family: 'Inter', sans-serif;
+  line-height: 40px;
+  white-space: nowrap;
+  transform: skewX(-10deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.portfolio-label {
+  margin-left: 60px;
+  width: 160px;
+  height: 44px;
+}
+/* About Me 也放進 name-row，方便同軸對齊 */
+
+
+.menu-row {
+  margin-left: auto; /* 推到右邊 */
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 350;
+  font-size: 1rem;
+  color: #212121;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+.name-row::after {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #212121;
+  opacity: 0.5;
+}
+
+.menu-item {
+  font-size: 16px;
+  font-weight: 350;
+  color: #212121;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.divider {
+  width: 1px;
+  height: 37px;
+  background-color: #212121;
+  opacity: 0.5;
+}
+
+.name-row-line {
+  position: absolute;
+  top: calc(56px + 44px + 17px); /* 56 是 name-row 的 top, 44 是 name-row 高度（大概值） */
+  left: 57px;
+  width: 1326px;
+  height: 1px;
+  background-color: #212121; /* 或其他顏色 */
+  opacity: 0.5; /* 如果你希望它不是全黑 */
+}
+
+.intro-text-block {
+  margin: 60px auto 0 auto; /* 置中 */
+  max-width: 1074px;
+  padding: 0 10px; /* 和圖片 padding 保持一致 */
+  text-align: left;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #212121;
+}
+.intro-title {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 67px;
+  font-family: 'Inter', sans-serif;
+  word-wrap: break-word;
+}
+
+.intro-subtitle {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 42px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 10px;
+  word-wrap: break-word;
+}
+
+.intro-paragraph {
+  font-size: 16px;
+  font-weight: 350;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+.image-row {
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1074px;
+  padding: 0 10px;
+  
+}
+
+
+.image-row img {
+  max-width: 33%;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.no-break {
+  white-space: nowrap;
+}
+.image-row img:hover {
+  transform: scale(1.03);
+}
+.about-section {
+  position: absolute;
+  top: 960px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1260px;
+  /* height: 269px; 取消固定高度 */
+  display: flex;
+  flex-direction: column; /* 改成上下排列 */
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px; /* 子元素間距 */
+  background: transparent;
+}
+
+.about-container {
+  width: 1260px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 101px;
+}
+
+.about-left {
+  width: 801px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
+}
+
+.about-avatar {
+  width: 269px;
+  height: 269px;
+  border-radius: 9999px;
+  object-fit: cover;
+}
+
+.about-info {
+  width: 432px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 350;
+  line-height: 24px;
+  color: #212121;
+}
+
+.about-divider {
+  width: 1px;
+  height: 232px;
+  background-color: #212121;
+}
+
+.about-skill {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 257px;
+  height: 233px;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-text {
+  align-self: stretch;
+  height: 67px;
+  color: #212121;
+  font-size: 16px;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 350;
+  line-height: 24px;
+  word-wrap: break-word;
+}
+
+.skill-icons {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.icon {
+  width: 64px;
+  height: 64px;
+  display: block;
+}
+
+.icon-nested {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-nested-img {
+  width: 64px;
+  height: 64px;
+}
+.swiper-container-wrapper {
+  width: 100vw;
+  height: auto;          /* 讓高度跟內容自適應 */
+  margin: 0;
+  overflow: visible;
+  box-sizing: border-box;
+}
+
+
+/* swiper 容器 */
+.info-swiper {
+  width: 100vw;
+  height: 600px;         /* 你卡片本身高度 */
+  overflow: visible;
+  box-sizing: border-box;
+  padding-bottom: 40px;
+}
+.info-card-inner {
+  padding: 30px 42px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 33px; /* 和標題與內文的間距 */
+}
+/* swiper-wrapper */
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+/* swiper-slide 卡片大小 */
+.swiper-slide {
+  width: 460px;
+  height: 490px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform: scale(0.8);
+  opacity: 0.3;
+  z-index: 1;
+}
+/* info-card 內容 */
+.info-card {
+  width: 460px;
+  height: 490px;
+  border-radius: 34px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  background: white;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  color: #212121;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 32px 32px; /* 👈 上方 padding 增加為 40px，可視需要微調 */
+  overflow: hidden;
+}
+.info-content p {
+  margin: 0;
+  text-indent: 2em;       /* 👈 每段開頭內縮兩個字元 */
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  box-sizing: border-box;
+}
+/* 樣式示意，可自行調整 */
+.info-title {
+  width: 100%;
+  text-align: center;
+  color: #212121;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+
+.info-content {
+  width: 100%;
+  box-sizing: border-box;  /* 這行必加！ */
+  color: #212121;
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: left;
+  line-height: 30px;       /* 👉 行距：行與行之間的垂直距離 */
+  letter-spacing: 0.5px;   /* 👉 字距：每個字母之間的水平距離 */
+  padding: 16px 20px;        /* 左右縮排 */
+  text-align: justify; /* 讓文字左右對齊 */
+}
+
+.info-swiper .swiper-slide {
+  width: 460px;
+  height: 490px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: scale(0.8);
+  opacity: 0.3;
+  z-index: 1;
+}
+.info-swiper .swiper-slide-active {
+  opacity: 1;
+}
+.info-swiper .swiper-slide-prev,
+.info-swiper .swiper-slide-next {
+  opacity: 0.3;
+}
+
+.projects-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 60px;
+  box-sizing: border-box;
+  height: 3000px; /* 讓頁面有滾動空間測試用，可調整 */  
+}
+.project-image {
+  z-index: 10; /* ✅ 高於其他卡片 */
+  }
+.projects-text {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  position: relative;
+  margin-left: -4vw; /* 左邊空間隨著螢幕寬度調整 */
+  margin-top: 6vw; /* 上移也用 vw 表示 */
+  z-index: 10;
+}
+
+/* 卡片容器定位 */
+.projects-image-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  height: auto; /* 高度改為自動，方便卡片用絕對定位 */
+  min-height: 620px; /* 讓高度至少容納最大卡片高度 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12.9%; /* 116/900 ≈ 12.9%，響應式間距 */
+  box-sizing: border-box;
+  overflow: visible;
+  
+}
+
+/* 六張卡片絕對定位，置中後依序排開 */
+.project-layer {
+  position: absolute;
+  top: 0;
+  left: 50%; /* 全部置中 */
+  transform: translateX(-50%); /* 預設置中 */
+  width: 31.67%;
+  aspect-ratio: 285 / 620;
+  max-width: 285px;
+  max-height: 620px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+/* 取消原本的固定 left 定位 */
+.project-layer.left#l1,
+.project-layer.left#l2,
+.project-layer.left#l3,
+.project-layer.right#r1,
+.project-layer.right#r2,
+.project-layer.right#r3 {
+  /* 不要設定 left，改用 JS 動態控制 */
+  left: 50% !important;
+  /* z-index 還可以保留 */
+}
+
+.project-layer.left#l1 { z-index: 1; }
+.project-layer.left#l2 { z-index: 2; }
+.project-layer.left#l3 { z-index: 3; }
+.project-layer.right#r1 { z-index: 3; }
+.project-layer.right#r2 { z-index: 2; }
+.project-layer.right#r3 { z-index: 1; }
+
+
+.projects-text01 {
+  font-size: 64px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  position: relative;
+  margin-left: -4vw; /* 左邊空間隨著螢幕寬度調整 */
+  margin-top: 16vw; /* 上移也用 vw 表示 */
+  z-index: 10;
+}
+
+.project-image01 {
+  display: block;
+  margin-left: -10vw; /* 最終停靠的位置：離左邊 10% */
+  width: 300px;
+  max-width: 20vw;
+  opacity: 0;
+  transform: translateX(-100px);  /* 從左邊偏移進來 */
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+/* 淡入 + 平移 */
+.project-image01.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* 響應式控制最大寬度與間距 */
+@media (min-width: 1440px) {
+  .project-image01 {
+    max-width: 16vw;
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .project-image01 {
+    max-width: 80vw;
+    margin-top: 30px;
+  }
+}
