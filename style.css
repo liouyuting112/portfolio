@@ -1548,7 +1548,7 @@ body, html {
   background: url('images/t02.png') no-repeat center top / cover;
   z-index: -1;
   pointer-events: none;
-  margin-top: 538vw; /* 依照需要改成你想要它出現的位置 */
+  margin-top: 570vw; /* 依照需要改成你想要它出現的位置 */
   margin-left: -20.8vw;
 }
 .flow-subtitle {
@@ -1573,7 +1573,7 @@ body, html {
   background-color: #BADFD7; /* Tailwind bg-blue-300 */
   border-radius: 2.08vw;
   padding: 1.04vw;
-  width: 25vw;
+  width: 36vw;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -1825,7 +1825,7 @@ body, html {
 }
 .compare-image {
   display: block;         /* 讓圖片獨占一行 */
-  max-width: 100%;        /* 不超出容器 */
+  max-width: 80%;        /* 不超出容器 */
   height: auto;           /* 等比例縮放 */
   margin-top: 46vh;       /* 與上方標題留距離 */
   border-radius: 0.417vw;     /* 圓角，可選 */
