@@ -1048,7 +1048,7 @@ body, html {
   width: 40vw; /* Tailwind w-80 */
   font-family: 'Noto Sans TC', sans-serif;
   color: #1e293b; /* text-neutral-800 */
-  max-width: 12.5vw;
+  max-width: 30vw;
 }
 
 /* 名字 */
