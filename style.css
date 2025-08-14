@@ -1049,6 +1049,7 @@ body, html {
   font-family: 'Noto Sans TC', sans-serif;
   color: #1e293b; /* text-neutral-800 */
   max-width: 22vw;
+  font-size: 1rem;
 }
 
 /* 名字 */
@@ -1066,6 +1067,7 @@ body, html {
   color: #000;
   width: 20vw;  /* 原 240px → 12.5vw */
   max-width: 20vw;    /* 或 max-width: 24vw */
+  font-size: 1rem;
 }
 .card-desc p.indent {
   padding-left: 1em;    /* 整段往右 */
