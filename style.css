@@ -1045,7 +1045,7 @@ body, html {
   display: flex;
   flex-direction: column;
   gap: 0.4167vw;
-  width: 20vw; /* Tailwind w-80 */
+  width: 26vw; /* Tailwind w-80 */
   font-family: 'Noto Sans TC', sans-serif;
   color: #1e293b; /* text-neutral-800 */
   max-width: 12.5vw;
@@ -1571,7 +1571,7 @@ body, html {
 }
 
 .persona-card.complex-card02{
-  background-color: #b0c4db; /* Tailwind bg-blue-300 */
+  background-color: #52AF9C; /* Tailwind bg-blue-300 */
   border-radius: 2.083vw;
   padding: 1.0417vw;
   width: 30vw;
