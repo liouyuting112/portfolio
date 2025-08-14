@@ -1041,12 +1041,14 @@ body, html {
 }
 
 /* 文字區 */
-.card-desc p {
-  width: 100%;          /* 填滿父容器 */
-  max-width: none;      /* 移除 max-width 限制 */
-  font-size: 1rem;
-  line-height: 1.4;
-  margin-bottom: 0.4167vw;
+.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4167vw;
+  width: 26vw; /* Tailwind w-80 */
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #1e293b; /* text-neutral-800 */
+  max-width: 26vw;
 }
 
 /* 名字 */
@@ -1062,8 +1064,8 @@ body, html {
   line-height: 1.2;
   margin: 0 0 0.4167vw 0; /* 原 8px → 0.4167vw */
   color: #000;
-  max-width: 28vw; /* 原 240px → 12.5vw */
-  width: 40vw;    /* 或 max-width: 24vw */
+  max-width: 26vw; /* 原 240px → 12.5vw */
+  width: 26vw;    /* 或 max-width: 24vw */
 }
 .card-desc p.indent {
   padding-left: 1em;    /* 整段往右 */
