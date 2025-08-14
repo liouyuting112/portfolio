@@ -1017,7 +1017,7 @@ body, html {
   background-color: #b0c4db; /* Tailwind bg-blue-300 */
   border-radius: 2.083vw;
   padding: 1.0417vw;
-  width: 24.4792vw;
+  width: 25vw;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -1064,7 +1064,7 @@ body, html {
   line-height: 1.2;
   margin: 0 0 0.4167vw 0; /* 原 8px → 0.4167vw */
   color: #000;
-  max-width: 12.5vw; /* 原 240px → 12.5vw */
+  max-width: 25vw; /* 原 240px → 12.5vw */
 }
 .card-desc p.indent {
   padding-left: 1em;    /* 整段往右 */
@@ -1548,7 +1548,7 @@ body, html {
   background: url('images/t02.png') no-repeat center top / cover;
   z-index: -1;
   pointer-events: none;
-  margin-top: 570vw; /* 依照需要改成你想要它出現的位置 */
+  margin-top: 580vw; /* 依照需要改成你想要它出現的位置 */
   margin-left: -20.8vw;
 }
 .flow-subtitle {
@@ -1569,17 +1569,7 @@ body, html {
   margin-left: -1vw;
   margin-top: 2vw;
 }
-.persona-card.complex-card02 {
-  background-color: #BADFD7; /* Tailwind bg-blue-300 */
-  border-radius: 2.08vw;
-  padding: 1.04vw;
-  width: 36vw;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  gap: 0.52vw;
-  margin-left: 0.5vw;
-}
+
 
 /* 右側優化說明 */
 .optimization-info {
@@ -1825,7 +1815,7 @@ body, html {
 }
 .compare-image {
   display: block;         /* 讓圖片獨占一行 */
-  max-width: 80%;        /* 不超出容器 */
+  max-width: 85%;        /* 不超出容器 */
   height: auto;           /* 等比例縮放 */
   margin-top: 46vh;       /* 與上方標題留距離 */
   border-radius: 0.417vw;     /* 圓角，可選 */
