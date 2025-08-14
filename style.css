@@ -1045,7 +1045,7 @@ body, html {
   display: flex;
   flex-direction: column;
   gap: 0.4167vw;
-  width: 15.625vw; /* Tailwind w-80 */
+  width: 20vw; /* Tailwind w-80 */
   font-family: 'Noto Sans TC', sans-serif;
   color: #1e293b; /* text-neutral-800 */
   max-width: 12.5vw;
@@ -1570,7 +1570,16 @@ body, html {
   margin-top: 2vw;
 }
 
-
+.persona-card.complex-card02{
+  background-color: #b0c4db; /* Tailwind bg-blue-300 */
+  border-radius: 2.083vw;
+  padding: 1.0417vw;
+  width: 30vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5208vw;
+}
 /* 右側優化說明 */
 .optimization-info {
   max-width: 41.67vw;
@@ -1810,7 +1819,7 @@ body, html {
   align-items: center;
   justify-content: flex-start;
   position: absolute;
-  margin-top: -4vh; /* 向上移動，數值越大越往上 */
+  margin-top: 0vh; /* 向上移動，數值越大越往上 */
   margin-left: -1.9vw; /* 負值可以讓它往左移 */
 }
 .compare-image {
