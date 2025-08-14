@@ -1017,7 +1017,7 @@ body, html {
   background-color: #b0c4db; /* Tailwind bg-blue-300 */
   border-radius: 2.083vw;
   padding: 1.0417vw;
-  width: 25vw;
+  width: 30vw;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -1548,7 +1548,7 @@ body, html {
   background: url('images/t02.png') no-repeat center top / cover;
   z-index: -1;
   pointer-events: none;
-  margin-top: 580vw; /* 依照需要改成你想要它出現的位置 */
+  margin-top: 560vw; /* 依照需要改成你想要它出現的位置 */
   margin-left: -20.8vw;
 }
 .flow-subtitle {
@@ -1810,14 +1810,14 @@ body, html {
   align-items: center;
   justify-content: flex-start;
   position: absolute;
-  margin-top: -10vh; /* 向上移動，數值越大越往上 */
+  margin-top: -4vh; /* 向上移動，數值越大越往上 */
   margin-left: -1.9vw; /* 負值可以讓它往左移 */
 }
 .compare-image {
   display: block;         /* 讓圖片獨占一行 */
   max-width: 85%;        /* 不超出容器 */
   height: auto;           /* 等比例縮放 */
-  margin-top: 46vh;       /* 與上方標題留距離 */
+  margin-top: 40vh;       /* 與上方標題留距離 */
   border-radius: 0.417vw;     /* 圓角，可選 */
   margin-left: -1.9vw
 }
@@ -1826,7 +1826,7 @@ body, html {
   display: flex;
   flex-direction: column;
   gap: 1.0417vw;         /* 20px → 1.0417vw */
-  margin-top: -70vh;
+  margin-top: -64vh;
   margin-left: 56vw;
 }
 .right-title {
