@@ -1045,10 +1045,10 @@ body, html {
   display: flex;
   flex-direction: column;
   gap: 0.4167vw;
-  width: 26vw; /* Tailwind w-80 */
+  width: 22vw; /* Tailwind w-80 */
   font-family: 'Noto Sans TC', sans-serif;
   color: #1e293b; /* text-neutral-800 */
-  max-width: 26vw;
+  max-width: 22vw;
 }
 
 /* 名字 */
@@ -1064,8 +1064,8 @@ body, html {
   line-height: 1.2;
   margin: 0 0 0.4167vw 0; /* 原 8px → 0.4167vw */
   color: #000;
-  max-width: 26vw; /* 原 240px → 12.5vw */
-  width: 26vw;    /* 或 max-width: 24vw */
+  width: 20vw;  /* 原 240px → 12.5vw */
+  max-width: 20vw;    /* 或 max-width: 24vw */
 }
 .card-desc p.indent {
   padding-left: 1em;    /* 整段往右 */
