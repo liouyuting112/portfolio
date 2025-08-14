@@ -1041,14 +1041,12 @@ body, html {
 }
 
 /* 文字區 */
-.card-text {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4167vw;
-  width: 36vw; /* Tailwind w-80 */
-  font-family: 'Noto Sans TC', sans-serif;
-  color: #1e293b; /* text-neutral-800 */
-  max-width: 26vw;
+.card-desc p {
+  width: 100%;          /* 填滿父容器 */
+  max-width: none;      /* 移除 max-width 限制 */
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 0.4167vw;
 }
 
 /* 名字 */
