@@ -1551,7 +1551,7 @@ body, html {
   background: url('images/t02.png') no-repeat center top / cover;
   z-index: -1;
   pointer-events: none;
-  margin-top: 564vw; /* 依照需要改成你想要它出現的位置 */
+  margin-top: 562vw; /* 依照需要改成你想要它出現的位置 */
   margin-left: -20.8vw;
 }
 .flow-subtitle {
