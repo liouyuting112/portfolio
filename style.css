@@ -850,7 +850,7 @@ body, html {
   font-weight: 900;
   color: #212121;
   text-align: center;
-  margin-bottom: 1.5vw;       /* 標題與圖片距離 */
+  margin-bottom: 1.5vw;  /* 標題與圖片距離 */
 }
 
 .project-link-image {
@@ -998,7 +998,7 @@ body, html {
 }
 .persona-container {
   display: flex;
-  gap: 20px;
+  gap: 1.0417vw;        /* 20px → 1.0417vw */
   align-items: flex-start;
   margin-left: -2.4vw;
   margin-top: 5vw;
@@ -1008,35 +1008,34 @@ body, html {
 .cards-column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.0417vw;    /* 20px → 1.0417vw */
   flex-shrink: 0;
-  
 }
 
 /* 單張卡片外框 */
 .persona-card.complex-card {
   background-color: #b0c4db; /* Tailwind bg-blue-300 */
-  border-radius: 40px;
-  padding: 20px 20px 20px 20px;
-  width: 470px;
+  border-radius: 2.083vw;
+  padding: 1.0417vw;
+  width: 24.4792vw;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.5208vw;
 }
 
 /* 卡片內主要內容區 */
 .card-content {
   display: flex;
-  gap: 16px;
+  gap: 0.8333vw;
   align-items: flex-start;
 }
 
 /* 卡片圖片 */
 .card-img {
-  width: 176px;  /* Tailwind w-44 */
-  height: 280px; /* 對應圖片高 */
-  border-radius: 20px;
+  width: 9.1667vw;       /* 176px → 9.1667vw */
+  height: 14.5833vw;     /* 280px → 14.5833vw */
+  border-radius: 1.042vw;/* 20px → 1.042vw */
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -1045,11 +1044,11 @@ body, html {
 .card-text {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  width: 300x; /* Tailwind w-80 */
+  gap: 0.4167vw;
+  width: 15.625vw; /* Tailwind w-80 */
   font-family: 'Noto Sans TC', sans-serif;
   color: #1e293b; /* text-neutral-800 */
-  max-width: 240px;
+  max-width: 12.5vw;
 }
 
 /* 名字 */
@@ -1063,19 +1062,19 @@ body, html {
 .card-desc p {
   font-size: 1rem; /* text-base */
   line-height: 1.2;
-  margin: 0 0 8px 0;
+  margin: 0 0 0.4167vw 0; /* 原 8px → 0.4167vw */
   color: #000;
-  max-width: 240px;
+  max-width: 12.5vw; /* 原 240px → 12.5vw */
 }
 .card-desc p.indent {
   padding-left: 1em;    /* 整段往右 */
   text-indent: -1em;    /* 第一行往左拉回 */
   line-height: 1.4;
-  margin: 0 0 8px 0;
+  margin: 0 0 0.4167vw 0;
 }
 /* 第二張卡片圖片高度調整 */
 .cards-column .persona-card.complex-card:nth-child(2) .card-img {
-  height: 280px;
+  height: 14.5833vw;
 }
 
 /* 右邊圖片 */
@@ -1083,7 +1082,7 @@ body, html {
   width: 40vw;
   height: 33vw;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 1.042vw;
   flex-shrink: 0;
   display: block;
   margin-top: 0vw; /* 往下間距 */
@@ -1737,7 +1736,7 @@ body, html {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 40px 60px;
+  padding: 3.90625vh 3.125vw;
   background-color: #ffffff;
   font-family: 'Noto Sans TC', sans-serif;
   color: #333;
@@ -1746,7 +1745,7 @@ body, html {
 .footer-left {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 0.8333vw;
 }
 
 .footer-name {
@@ -1771,7 +1770,7 @@ body, html {
 .footer-right {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0.625vw;
   text-align: center;
 }
 
@@ -1833,24 +1832,22 @@ body, html {
   margin-left: -1.9vw
 }
 .right-side {
-  width: 300px; /* 固定寬度，可依需求調整 */
+  width: 15.625vw;       /* 300px → 15.625vw */
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 1.0417vw;         /* 20px → 1.0417vw */
   margin-top: -70vh;
-  margin-left: 56vw
+  margin-left: 56vw;
 }
-
 .right-title {
-  height: 56px;
+  height: 2.9167vw;       /* 56px → 2.9167vw */
   text-align: center;
   color: white;
-  font-size: 2.25rem;
+  font-size: 1.875vw;      /* 36px → 1.875vw */
   font-weight: 800;
   font-family: 'Inter', sans-serif;
-  line-height: 2.5rem;
+  line-height: 2.0833vw;   /* 40px → 2.0833vw */
 }
-
 .right-desc {
   color: white;
   font-size: 1rem;
@@ -1860,23 +1857,22 @@ body, html {
 }
 
 .right-subtitle {
-  height: 40px;
+  height: 2.0833vw;       /* 40px → 2.0833vw */
   text-align: center;
   color: white;
-  font-size: 2.25rem;
+  font-size: 1.875vw;      /* 36px → 1.875vw */
   font-weight: 900;
   font-family: 'Inter', sans-serif;
-  line-height: 1.75rem;
+  line-height: 1.4583vw;   /* 28px → 1.4583vw */
   white-space: nowrap;
-  margin-left: -0.8vw
+  margin-left: -0.8vw;
 }
-
 .prototype-image {
-  width: 219px;
-  height: 219px;
+  width: 11.4063vw;       /* 219px → 11.4063vw */
+  height: 11.4063vw;      /* 219px → 11.4063vw */
   object-fit: cover;
-  border-radius: 8px;
-  margin-left: 2.5vw
+  border-radius: 0.4167vw; /* 8px → 0.4167vw */
+  margin-left: 2.5vw;
 }
 /* 響應式調整：手機變成上下排 */
 @media (max-width: 1024px) {
