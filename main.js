@@ -280,8 +280,6 @@ document.querySelectorAll('.flow-step, .flow-step01, .flow-step02, .flow-step03'
       const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
       window.scrollTo({ top: elementPosition + offset, behavior: 'smooth' });
 
-      document.querySelectorAll('.flow-step, .flow-step01, .flow-step02, .flow-step03').forEach(s => s.classList.remove('active'));
-      step.classList.add('active');
     }
   });
 });
