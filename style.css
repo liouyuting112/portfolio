@@ -1562,7 +1562,7 @@ body, html {
     margin-top: 2vh !important; /* 強制覆蓋原設定 */
   }
   .bg-layer-2 {
-    margin-top: 538vw;
+    margin-top: 540vw;
   }
   .right-side {
     margin-top: -60vh; /* 原本 -73vh，往下移一點 */
@@ -1976,4 +1976,5 @@ body, html {
   .bg-layer {
     margin-top: 400vw; /* 原 380vw 再往下 */
   }
+
 }
